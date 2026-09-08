@@ -125,7 +125,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Flutter',
+    'Dart',
+    'BLoC & Riverpod',
+    'Clean Architecture & MVVM',
+    'Firebase Services',
+    'REST APIs & Gateways',
+    'CI/CD',
+    'Git & Github',
+    'Postman',
+    'Shorebird',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +146,34 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Sudish Kumar and I enjoy building scalable, high-performance mobile
+              and digital applications. With 4.7+ years of experience, I specialize in engineering
+              production-grade mobile architectures across FinTech, Trading, Travel, Healthcare, and
+              Social Media domains.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Throughout my journey, I’ve had the privilege of developing production applications at{' '}
+              <a href="https://bigul.co/" target="_blank" rel="noreferrer">
+                Bigul
+              </a>
+              , <span>Edugaon</span>, and <span>Vistic Solutions</span>. My focus centers on
+              designing clean, maintainable systems using BLoC, Riverpod, Clean Architecture, and
+              MVVM, along with seamless payment gateway and cloud integrations for Android and iOS.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Currently, as a Senior Software Engineer at{' '}
+              <a href="https://bigul.co/" target="_blank" rel="noreferrer">
+                Bigul
+              </a>
+              , I lead and build core trading features such as IPO investment workflows, real-time
+              market data, stock SIPs, and corporate actions. I am also pursuing an M.S. in
+              Artificial Intelligence &amp; Cyber Security at{' '}
+              <a href="https://www.iitp.ac.in/" target="_blank" rel="noreferrer">
+                IIT Patna
+              </a>
+              .
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>

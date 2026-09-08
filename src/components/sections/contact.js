@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { srConfig, email, phone } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
@@ -35,9 +35,18 @@ const StyledContactSection = styled.section`
     font-size: clamp(40px, 5vw, 60px);
   }
 
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+  .cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+    .email-link,
+    .phone-link {
+      ${({ theme }) => theme.mixins.bigButton};
+    }
   }
 `;
 
@@ -60,13 +69,19 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        I’m actively open to new opportunities, mobile engineering roles, and impactful projects.
+        Whether you have a question, an opportunity, or just want to connect, feel free to reach
+        out!
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
+      <div className="cta-wrapper">
+        <a className="email-link" href={`mailto:${email}`}>
+          Say Hello
+        </a>
+        <a className="phone-link" href={`tel:${phone}`}>
+          Call: +91 8292448021
+        </a>
+      </div>
     </StyledContactSection>
   );
 };

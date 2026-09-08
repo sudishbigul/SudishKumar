@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "sudish-kumar-portfolio",
+  "description": "Sudish Kumar - Senior Software Engineer Portfolio",
   "version": "1.0.0",
-  "author": "Sudish Kumar <brittany.chiang@gmail.com>",
+  "author": "Sudish Kumar <sudishkr.tech@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/sudishk/sudish_kumar"
   },
   "keywords": [
     "gatsby"
